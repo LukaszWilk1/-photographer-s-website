@@ -18,6 +18,7 @@ nav{
     position: sticky;
     top: 0px;
     width: 100%;
+    z-index: 2;
 }
 
 nav h1{
@@ -50,6 +51,48 @@ header{
     justify-content: center;
     padding: 6% 0;
 }
+
 header img{
     width: 21.875%
+}
+
+/* Main */
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 6% 0;
+}
+
+#central-photo{
+    margin: 20% 0;
+}
+
+main div{
+    display: flex;
+    width: 21.875%;
+    align-items: center;
+    justify-content: center;
+}
+
+div img{
+    width: 100%;
+    transition: filter 0.5s;
+}
+
+main div img:hover{
+    filter: grayscale(0.15) opacity(0.6);
+    cursor: pointer;
+}
+
+.picture-description{
+    color: black;
+    font-size: 3.75em;
+    position: absolute;
+    visibility: hidden;
+}
+main div:hover .picture-description{
+    visibility: visible;
+    filter: opacity(1);
 }

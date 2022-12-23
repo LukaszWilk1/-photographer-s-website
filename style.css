@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a:visited{
+    color:black;
+}
+
+/* Navbar */
+
+nav{
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.75% 1%;
+    position: sticky;
+    top: 0px;
+    width: 100%;
+}
+
+nav h1{
+    font-family: 'Great Vibes', cursive;
+    font-size: 3.75rem;
+    font-weight: normal;
+    width: 80%
+}
+
+nav p{
+    align-items: center;
+    display: flex;
+    font-family: 'PT Serif', serif;
+    font-size: 1.125em;
+    justify-content: space-between;
+    min-width: 270px;
+    text-align: right;
+    padding: 0 0.5%;
+    width: 20%;
+}
+
+nav p a{
+    text-decoration: none;
+}
+
+/* Header */
+
+header{
+    display: flex;
+    justify-content: center;
+    padding: 6% 0;
+}
+header img{
+    width: 21.875%
+}

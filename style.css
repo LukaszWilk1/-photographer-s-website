@@ -14,7 +14,7 @@ nav{
     background-color: #fff;
     display: flex;
     justify-content: space-between;
-    padding: 0.75% 1%;
+    padding: 0.75rem 1rem;
     position: sticky;
     top: 0px;
     width: 100%;
@@ -34,9 +34,9 @@ nav p{
     font-family: 'PT Serif', serif;
     font-size: 1.125em;
     justify-content: space-between;
-    min-width: 270px;
-    text-align: right;
-    padding: 0 0.5%;
+    min-width: 270px;                   /* TO CHANGE */
+    text-align: center;
+    padding: 0 1rem;
     width: 20%;
 }
 
@@ -54,7 +54,6 @@ header{
 
 header img{
     width: 21.875%;
-    min-width: 300px;
 }
 
 /* Main */
@@ -63,11 +62,11 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 6% 0;
+    padding: 6rem 0;
 }
 
 #central-photo{
-    margin: 20% 0;
+    margin: 20rem 0;
 }
 
 main div{
@@ -96,4 +95,51 @@ main div img:hover{
 main div:hover .picture-description{
     visibility: visible;
     filter: opacity(1);
+}
+
+/* Footer */
+
+footer{
+    display: flex;
+    justify-content: center;
+    padding: 0 0 4em;
+}
+
+footer img{
+    width: 2rem;
+}
+
+/* Media Queires */
+
+@media only screen and (max-width: 480px){
+    /* Navbar */
+    nav h1{
+        font-size: 2rem;
+    }
+
+    nav p{
+        font-size: 0.75em;
+        padding: 0 1rem;
+    }
+
+    /* Header */
+
+    header{
+        margin: 7rem 0;
+    }
+
+    header img{
+        width: 60%;
+    }
+
+    /* Main */
+
+    main{
+        padding: 13rem 0 5rem;
+    }
+
+    main div{
+        width: 60%;
+    }
+
 }

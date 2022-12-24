@@ -102,7 +102,7 @@ main div:hover .picture-description{
 footer{
     display: flex;
     justify-content: center;
-    padding: 0 0 4em;
+    padding: 0 0 4rem;
 }
 
 footer img{
@@ -114,7 +114,7 @@ footer img{
 @media only screen and (max-width: 480px){
     /* Navbar */
     nav h1{
-        font-size: 2rem;
+        font-size: 2em;
     }
 
     nav p{
@@ -135,11 +135,58 @@ footer img{
     /* Main */
 
     main{
-        padding: 13rem 0 5rem;
+        padding: 13rem 0 7rem;
     }
 
     main div{
         width: 60%;
     }
 
+    .picture-description{
+        font-size: 2.5em;
+    }
+
+    /* Footer */
+
+    footer img{
+        width: 7%;
+    }
+
+}
+
+@media only screen and (max-width: 768px){
+    /*  Navbar */
+    nav h1{
+        font-size: 2.75em;
+    }
+
+    nav p{
+        font-size: 1em;
+        padding: 0.9rem;
+    }
+
+    /* Header */
+
+    header{
+        margin: 4rem 0;
+    }
+
+    header img{
+        width: 55%;
+    }
+
+    /* Main */
+    main  div{
+        width: 55%;
+    }
+
+    /* Footer */
+
+    footer{
+        padding: 0 0 3.5rem;
+    }
+
+    footer img{
+        width: 5%;
+    }
 }

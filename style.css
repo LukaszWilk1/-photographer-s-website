@@ -49,7 +49,7 @@ nav p a{
 header{
     display: flex;
     justify-content: center;
-    padding: 6% 0;
+    padding: 6rem 0;
 }
 
 header img{
@@ -91,6 +91,7 @@ main div img:hover{
     font-size: 3.75em;
     position: absolute;
     visibility: hidden;
+    transition: visibility 0.5s;
 }
 main div:hover .picture-description{
     visibility: visible;
@@ -143,7 +144,7 @@ footer img{
     }
 
     .picture-description{
-        font-size: 2.5em;
+        font-size: 2em;
     }
 
     /* Footer */
@@ -180,6 +181,10 @@ footer img{
         width: 55%;
     }
 
+    .picture-description{
+        font-size: 2.5em;
+    }
+
     /* Footer */
 
     footer{
@@ -188,5 +193,25 @@ footer img{
 
     footer img{
         width: 5%;
+    }
+}
+
+@media only screen and (max-width: 1024px) and (max-height: 768px){
+    /* Header */
+    header img{
+        width: 30%;
+    }
+
+    /* Main */
+    main div{
+        width: 30%;
+    }
+    .picture-description{
+        font-size: 2.75em;
+    }
+
+    /* Footer */
+    footer img{
+        width: 3%;
     }
 }

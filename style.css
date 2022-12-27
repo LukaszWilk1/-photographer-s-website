@@ -107,7 +107,7 @@ footer{
 }
 
 footer img{
-    width: 2%;
+    width: 1.75%;
 }
 
 /* Media Queires */
@@ -125,10 +125,6 @@ footer img{
 
     /* Header */
 
-    header{
-        margin: 7rem 0;
-    }
-
     header img{
         width: 60%;
     }
@@ -136,7 +132,7 @@ footer img{
     /* Main */
 
     main{
-        padding: 13rem 0 7rem;
+        padding: 18rem 0 7rem;
     }
 
     main div{
@@ -155,7 +151,7 @@ footer img{
 
 }
 
-@media only screen and (min-width: 480px) and (max-width: 767){
+@media only screen and (min-width: 480px) and (max-width: 767px){
     /*  Navbar */
     nav h1{
         font-size: 2.75em;
@@ -168,12 +164,8 @@ footer img{
 
     /* Header */
 
-    header{
-        margin: 4rem 0;
-    }
-
     header img{
-        width: 55%;
+        width: 50%;
     }
 
     /* Main */
@@ -196,7 +188,7 @@ footer img{
     }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px){
+@media only screen and (min-width: 768px) and (max-width: 1023px){
     /* Header */
     header img{
         width: 55%;
@@ -216,5 +208,37 @@ footer img{
     /* Footer */
     footer img{
         width: 6%;
+    }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1599px){
+
+    /* Header */
+
+    header{
+        padding: 4rem 0;
+    }
+
+    header img{
+        width: 20%;
+    }
+
+    /* Main */
+
+    main{
+        padding: 12rem 0 6rem;
+    }
+
+    main div{
+        width: 20%;
+    }
+
+    .picture-description{
+        font-size: 3em;
+    }
+
+    /* Footer */
+
+    footer{
+        padding: 0 0 2.5rem;
     }
 }

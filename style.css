@@ -103,11 +103,34 @@ main div:hover .picture-description{
 footer{
     display: flex;
     justify-content: center;
-    padding: 0 0 4rem;
+    padding: 2.5rem 0;
 }
 
 footer img{
-    width: 1.75%;
+    width: 1.5%;
+}
+
+/* ABOUT ME */
+
+#about-me-main{
+ padding: 4rem 0 8rem;
+}
+
+#about-me-h1{
+    font-size: 3.75em;
+    font-weight:normal;
+}
+
+#about-me-p{
+    font-size: 1.5em;
+    width: 66.14%;
+    text-align: center;
+}
+
+#about-me-img{
+    width:13.5%;
+    border-radius: 100%;
+    margin: 2.815rem 0;
 }
 
 /* Media Queires */
@@ -149,12 +172,31 @@ footer img{
         width: 7%;
     }
 
+    /* ABOUT ME */
+
+    #about-me-main{
+        padding: 1rem 0 2rem;
+    }
+
+    #about-me-h1{
+        font-size: 3em;
+    }
+
+    #about-me-img{
+        margin: 2rem;
+        width: 35%;
+    }
+
+    #about-me-p{
+        font-size: 1.3em;
+    }
+
 }
 
 @media only screen and (min-width: 480px) and (max-width: 767px){
     /*  Navbar */
     nav h1{
-        font-size: 2.75em;
+        font-size: 2.5em;
     }
 
     nav p{
@@ -164,13 +206,17 @@ footer img{
 
     /* Header */
 
+    header{
+        padding: 1.5rem 0 14rem;
+    }
+
     header img{
-        width: 50%;
+        width: 40%;
     }
 
     /* Main */
-    main  div{
-        width: 55%;
+    main div{
+        width: 40%;
     }
 
     .picture-description{
@@ -180,11 +226,30 @@ footer img{
     /* Footer */
 
     footer{
-        padding: 0 0 3.5rem;
+        padding: 2rem 0;
     }
 
     footer img{
-        width: 5%;
+        width: 3%;
+    }
+
+    /* ABOUT ME */
+
+    #about-me-main{
+        padding: 1rem 0;
+    }
+
+    #about-me-h1{
+        font-size: 4em;
+    }
+
+    #about-me-img{
+        margin: 2rem;
+        width: 35%;
+    }
+
+    #about-me-p{
+        font-size: 1.3em;
     }
 }
 
@@ -241,30 +306,4 @@ footer img{
     footer{
         padding: 0 0 2.5rem;
     }
-}
-
-/* ABOUT ME */
-
-.about-main{
-    background-color: red;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family: 'PT Serif', serif;
-}
-
-.about-main h1{
-    font-size: 3.75em;
-    font-weight:normal;
-}
-
-.about-main p{
-    font-size: 1.5em;
-    width: 66.14%;
-    text-align: center;
-}
-
-.about-main-img{
-    width:13.5%;
-    border-radius: 100%;
 }

@@ -101,9 +101,12 @@ main div:hover .picture-description{
 /* Footer */
 
 footer{
+    position: relative;
+    bottom: 0px;
     display: flex;
     justify-content: center;
     padding: 2.5rem 0;
+    width: 100%;
 }
 
 footer img{
@@ -260,7 +263,7 @@ footer img{
     }
 
     /* Main */
-    main{
+    #main-main{
         padding: 22rem 0 11rem;
     }
     main div{
@@ -272,7 +275,22 @@ footer img{
 
     /* Footer */
     footer img{
-        width: 6%;
+        width: 5%;
+    }
+
+    /* ABOUT ME */
+    
+    #about-me-h1{
+        font-size: 7em;
+    }
+    
+    #about-me-img{
+        margin: 2rem;
+        width: 35%;
+    }
+    
+    #about-me-p{
+        font-size: 2em;
     }
 }
 @media only screen and (min-width: 1024px) and (max-width: 1599px){
@@ -303,7 +321,8 @@ footer img{
 
     /* Footer */
 
-    footer{
-        padding: 0 0 2.5rem;
+    footer img{
+        width: 2%
     }
+
 }

@@ -147,18 +147,35 @@ footer img{
     width: 30%;
 }
 
-form{
-    background-color: yellow;
+#contact-div{
+    background-color: red;
+    font-family: 'PT Serif', serif;
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
     width: 70%;
 }
 
-input{
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 79%;
+    background-color: yellow;
+    height: 100%;
+}
+
+input{
     padding: 0.5rem;
+}
+
+input, textarea{
+    margin: 1rem 0;
+    width: 100%;
+}
+
+input[type="submit"]{
+    width: 28.5%;
+    margin-left: auto;
 }
 
 /* Media Queires */

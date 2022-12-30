@@ -140,11 +140,12 @@ footer img{
 
 #contact{
     display: flex;
-    width:63%;
+    width: 63%;
 }
 
 #contact img{
     width: 30%;
+    min-width: 357px;
 }
 
 #contact-div{

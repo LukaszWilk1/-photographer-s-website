@@ -140,7 +140,7 @@ footer img{
 
 #contact{
     display: flex;
-    width:63%
+    width:63%;
 }
 
 #contact img{
@@ -148,8 +148,6 @@ footer img{
 }
 
 #contact-div{
-    background-color: red;
-    font-family: 'PT Serif', serif;
     display: flex;
     justify-content: center;
     width: 70%;
@@ -160,22 +158,41 @@ form{
     flex-direction: column;
     justify-content: center;
     width: 79%;
-    background-color: yellow;
     height: 100%;
 }
 
-input{
-    padding: 0.5rem;
+h3{
+    font-size: 2.15em;
+    font-weight: normal;
+    text-decoration: none;
 }
 
 input, textarea{
-    margin: 1rem 0;
+    font-family: 'PT Serif', serif;
+    margin: 1.5rem 0;
     width: 100%;
+    border: none;
+    border-bottom: 1px solid #646464;
+    padding: 0.5rem 0;
+    resize: none;
+}
+input[placeholder="Name and Surname"]{
+    margin-top: 3rem;
+}
+
+input::placeholder, textarea::placeholder{
+    font-family: 'PT Serif', serif;
 }
 
 input[type="submit"]{
+    font-family: 'PT Serif', serif;
+    border: 1px solid black;
     width: 28.5%;
     margin-left: auto;
+}
+
+input:focus, textarea:focus{
+    outline: none;
 }
 
 /* Media Queires */

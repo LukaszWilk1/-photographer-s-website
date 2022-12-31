@@ -140,12 +140,12 @@ footer img{
 
 #contact{
     display: flex;
-    width: 63%;
+    width: 80%;
 }
 
 #contact img{
     width: 30%;
-    min-width: 357px;
+    max-width: 370px;
 }
 
 #contact-div{
@@ -158,8 +158,7 @@ form{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 79%;
-    height: 100%;
+    width: 90%;
 }
 
 h3{
@@ -398,7 +397,31 @@ input:focus, textarea:focus{
 
     /* CONTACT ME */
     #contact-main{
-        padding: 6rem 0;
+        padding: 1.5rem 0;
+    }
+
+    #contact img{
+        display: none;
+    }
+
+    #contact-div{
+        width: 100%;
+    }
+
+    form{
+        width: 100%;
+    }
+
+    h3{
+        font-size: 2em;
+    }
+
+    input[placeholder="Name and Surname"]{
+        margin-top: 2rem;
+    }
+
+    input,textarea{
+        margin: 1rem 0;
     }
 
 }

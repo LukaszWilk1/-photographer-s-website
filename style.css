@@ -186,10 +186,21 @@ input::placeholder, textarea::placeholder{
 }
 
 input[type="submit"]{
+    background-color: #fff;
+    color:#000;
     font-family: 'PT Serif', serif;
+    font-size: 1.5em;
     border: 1px solid black;
     width: 28.5%;
+    padding: 0.25rem 0;
     margin-left: auto;
+    transition: all 0.25s ease-in-out;
+}
+
+input[type="submit"]:hover{
+    background-color: black;
+    color: white;
+    transition: all 0.25s ease-in-out;
 }
 
 input:focus, textarea:focus{
@@ -383,6 +394,11 @@ input:focus, textarea:focus{
 
     footer img{
         width: 2%
+    }
+
+    /* CONTACT ME */
+    #contact-main{
+        padding: 6rem 0;
     }
 
 }

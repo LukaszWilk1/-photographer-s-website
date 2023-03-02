@@ -143,15 +143,15 @@ footer img{
     width: 80%;
 }
 
-#contact img{
-    width: 30%;
-    max-width: 370px;
+#contact-img{
+    width: 90%;
+    margin-bottom: 7rem;
 }
 
 #contact-div{
     display: flex;
     justify-content: center;
-    width: 70%;
+    width: 100%;
 }
 
 form{
@@ -228,7 +228,7 @@ input:focus, textarea:focus{
     /* Main */
 
     main{
-        padding: 18rem 0 7rem;
+        padding: 5rem 0 7rem;
     }
 
     .main-images{
@@ -398,10 +398,6 @@ input:focus, textarea:focus{
     /* CONTACT ME */
     #contact-main{
         padding: 1.5rem 0;
-    }
-
-    #contact img{
-        display: none;
     }
 
     #contact-div{

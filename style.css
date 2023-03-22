@@ -394,6 +394,13 @@ input:focus, textarea:focus{
         font-size: 1em;
         width: 35%;
     }
+
+    /* ARCHITECTURE */
+
+    #arch-grid-container{
+        display: block;
+        width: 90%
+    }
 }
 
 @media only screen and (min-width: 480px) and (max-width: 767px){
@@ -454,6 +461,12 @@ input:focus, textarea:focus{
     #about-me-p{
         font-size: 1.3em;
     }
+
+    /* ARCHITECTURE */
+
+    #arch-grid-container{
+        width: 80%;
+    }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px){
@@ -492,6 +505,13 @@ input:focus, textarea:focus{
     #about-me-p{
         font-size: 2em;
     }
+
+    /* ARCHITECTURE */
+
+    #arch-grid-container{
+        width: 80%;
+    }
+
 }
 @media only screen and (min-width: 1024px) and (max-width: 1599px){
 

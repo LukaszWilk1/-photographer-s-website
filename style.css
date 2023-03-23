@@ -213,7 +213,8 @@ input:focus, textarea:focus{
 
 #main-grid-container{
     width: 70%;
-    display: inline-block;
+    display: flex;
+    justify-content: space-between;
 }
 
 .small-grid{
@@ -223,12 +224,15 @@ input:focus, textarea:focus{
 
 #first-nat-grid{
     display: grid;
+    row-gap: 0.3rem;
 }
 #second-nat-grid{
     display: grid;
+    row-gap: 0.3rem;
 }
 #third-nat-grid{
     display: grid;
+    row-gap: 0.3rem;
 }
 
 #main-grid-container img{

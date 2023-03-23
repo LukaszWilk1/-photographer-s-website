@@ -323,6 +323,11 @@ input:focus, textarea:focus{
 /* Media Queires */
 
 @media only screen and (min-width: 0px) and (max-width: 479px){
+
+    a:visited{
+        color:black;
+    }
+
     /* Navbar */
     nav h1{
         font-size: 2em;

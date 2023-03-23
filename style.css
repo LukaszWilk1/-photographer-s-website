@@ -207,54 +207,40 @@ input:focus, textarea:focus{
 }
 
 /* Nature */
+#nat-main{
+    padding: 5rem 0 6rem 0;
+}
 
 #main-grid-container{
-    width: 55%;
+    width: 70%;
+    display: inline-block;
+}
+
+.small-grid{
+    width: 33%;
+    float: left;
+}
+
+#first-nat-grid{
     display: grid;
-    grid-template-columns: auto auto;
-    grid-area: 
-    'left-column right-column';
-    column-gap: 4rem;
 }
-
-#main-grid-container #left-column{
+#second-nat-grid{
     display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto auto auto;
-    grid-template-areas: 
-    'a a'
-    'b b'
-    'c d'
-    'e e';
-    column-gap: 4rem;
-    row-gap: 4rem;
 }
-
-#left-column #a{
-    grid-area: a;
-}
-
-#left-column  #b{
-    grid-area: b;
-}
-
-#left-column #c{
-    grid-area: c;
-}
-
-#left-column #d{
-    grid-area: d;
-}
-
-#left-column #e{
-    grid-area: e;
+#third-nat-grid{
+    display: grid;
 }
 
 #main-grid-container img{
     width:100%;
+    object-fit: cover;
 }
 
 /* Architecture */
+
+#arch-main{
+    padding: 5rem 0 6rem 0;
+}
 
 #arch-grid-container{
     width: 54%;

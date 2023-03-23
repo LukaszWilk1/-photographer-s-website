@@ -385,6 +385,17 @@ input:focus, textarea:focus{
         width: 35%;
     }
 
+    /* NATURE */
+
+    #main-grid-container{
+        display: block;
+    }
+
+    .small-grid{
+        float: none;
+        width: 100%;
+    }
+
     /* ARCHITECTURE */
 
     #arch-grid-container{

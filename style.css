@@ -327,13 +327,20 @@ input:focus, textarea:focus{
 /* PRESETS */
 
 #presets-main{
-    padding: 4rem 0 6rem 0;
+    padding: 4rem 4rem 6rem 4rem;
 }
 
 #presets-container{
-    width: 50%;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+}
+
+.cell{
+    width: 30%;
+    padding: 1rem;
 }
 
 #presets-container img{
@@ -341,16 +348,8 @@ input:focus, textarea:focus{
 }
 
 .small-containers{
-    width: 25%;
-    display: flex;
-    flex-direction: column;
-    justify-content: stretch;
-    align-items: stretch;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
-
-.small-containers:hover{
-    zoom: 1;
+    width: 100%;
+    box-shadow: 0px 0px 11px 3px rgba(66, 68, 90, 1);
 }
 
 .small-containers div{
@@ -366,7 +365,32 @@ input:focus, textarea:focus{
 .small-containers div ul{
     list-style: none;
     font-family: 'PT Serif', serif;
+    padding: 0.5rem;
 }
+
+.small-containers h3{
+    padding: 0.5rem;
+}
+
+.buttons{
+    background-color: #fff;
+    color:#000;
+    font-family: 'PT Serif', serif;
+    font-size: 1.5em;
+    border: 1px solid black;
+    width: 100%;
+    margin: 1rem 0 0 0;
+    padding: 0.25rem 0;
+    transition: all 0.25s ease-in-out;
+}
+
+.buttons:hover{
+    background-color: black;
+    color: white;
+    transition: all 0.25s ease-in-out;
+    cursor: pointer;
+}
+
 
 /* Media Queires */
 
@@ -459,6 +483,17 @@ input:focus, textarea:focus{
     #arch-grid-container img{
         margin: 0.75rem 0;
     }
+
+    /*PRESETS*/
+
+    #presets-container{
+        justify-content: center;
+        align-items: space-between;
+    }
+
+    .cell{
+        width: 100%;
+    }
 }
 
 @media only screen and (min-width: 480px) and (max-width: 767px){
@@ -525,6 +560,18 @@ input:focus, textarea:focus{
     #arch-grid-container{
         width: 80%;
     }
+
+    /*PRESETS*/
+
+    #presets-container{
+        justify-content: center;
+        align-items: space-between;
+    }
+
+    .cell{
+        width: 50%;
+    }
+
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px){
@@ -568,6 +615,21 @@ input:focus, textarea:focus{
 
     #arch-grid-container{
         width: 80%;
+    }
+
+    /*PRESETS*/
+
+    #presets-main{
+        padding: 2rem 2rem 7rem 2rem;
+    }
+
+    #presets-container{
+        justify-content: center;
+        align-items: space-between;
+    }
+
+    .cell{
+        width: 50%;
     }
 
 }

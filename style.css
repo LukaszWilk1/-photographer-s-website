@@ -113,8 +113,12 @@ footer{
     width: 100%;
 }
 
-footer img{
-    width: 1.5%;
+footer a{
+    width: 2%;
+}
+
+footer a img{
+    width: 100%;
 }
 
 /* ABOUT ME */
@@ -391,6 +395,14 @@ input:focus, textarea:focus{
     cursor: pointer;
 }
 
+.reveal{
+    opacity: 0;
+    transition: 1s all ease;
+}
+
+.reveal.active{
+    opacity: 1;
+}
 
 /* Media Queires */
 

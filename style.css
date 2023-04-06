@@ -434,12 +434,12 @@ input:focus, textarea:focus{
         width: auto;
         align-items: center;
         justify-content: center;
-        display: none;
         width: 100%;
         min-width: 100px;
-        transform-origin: 50% 0;
-        transform: scaleY(0);
-        background-color: red;
+        z-index: 1;
+        position: absolute;
+        top: 100%;
+        left: 0%;
     }
 
     nav p a{
@@ -450,16 +450,13 @@ input:focus, textarea:focus{
 
     nav.responsive p{
         display: block;
-        transform: scaleY(1);
-        background-color: red;
+        animation-name: height-grow;
+        animation-duration: 250ms;
+        background-color: gainsboro;
     }
 
     nav.responsive p a{
         display: block;
-    }
-
-    nav.responsive{
-        position: relative;
     }
 
     nav .icon{
@@ -818,5 +815,14 @@ input:focus, textarea:focus{
     }
     to{
         transform: scaleY(0);
+    }
+}
+
+@keyframes hiding-as {
+    from{
+        display: none;
+    }
+    to{
+        display: block;
     }
 }

@@ -17,6 +17,7 @@ a{
 nav{
     background-color: #fff;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding: 0.75rem 1rem;
     position: sticky;
@@ -38,7 +39,6 @@ nav p{
     font-family: 'PT Serif', serif;
     font-size: 1.125em;
     justify-content: space-between;
-    min-width: 270px;                   /* TO CHANGE */
     text-align: center;
     padding: 0 1rem;
     width: 20%;
@@ -46,6 +46,14 @@ nav p{
 
 nav a{
     text-decoration: none;
+}
+
+nav a img{
+    width: 40%;
+}
+
+.icon{
+  display: none;
 }
 
 /* Header */
@@ -417,9 +425,50 @@ input:focus, textarea:focus{
         font-size: 2em;
     }
 
+    /* NAV */
+
     nav p{
-        font-size: 0.75em;
-        padding: 0 1rem;
+        padding: 0;
+        text-align: center;
+        flex-direction: column;
+        width: auto;
+        align-items: center;
+        justify-content: center;
+        display: none;
+        width: 100%;
+        min-width: 100px;
+        transform-origin: 50% 0;
+        transform: scaleY(0);
+        background-color: red;
+    }
+
+    nav p a{
+        display: none;
+        font-size: 0.75rem;
+        margin: 1em;
+    }
+
+    nav.responsive p{
+        display: block;
+        transform: scaleY(1);
+        background-color: red;
+    }
+
+    nav.responsive p a{
+        display: block;
+    }
+
+    nav.responsive{
+        position: relative;
+    }
+
+    nav .icon{
+        display: block;
+        width: 10%;
+    }
+
+    .icon img{
+        width: 100%;
     }
 
     /* Header */
@@ -514,9 +563,32 @@ input:focus, textarea:focus{
         font-size: 2.5em;
     }
 
+    /* NAV */
+
     nav p{
-        font-size: 1em;
-        padding: 0.9rem;
+        padding: 0;
+        text-align: right;
+        flex-direction: column;
+        width: auto;
+        align-items: center;
+        justify-content: center;
+    }
+
+    nav.responsive{
+        position: relative;
+    }
+
+    nav p a{
+        display: none;
+    }
+
+    nav .icon{
+        display: block;
+        width: 10%;
+    }
+
+    .icon img{
+        width: 100%;
     }
 
     /* Header */
@@ -590,6 +662,34 @@ input:focus, textarea:focus{
     /* Header */
     header img{
         width: 55%;
+    }
+
+    /* NAV */
+
+    nav p{
+        padding: 0;
+        text-align: right;
+        flex-direction: column;
+        width: auto;
+        align-items: center;
+        justify-content: center;
+    }
+
+    nav.responsive{
+        position: relative;
+    }
+
+    nav p a{
+        display: none;
+    }
+
+    nav .icon{
+        display: block;
+        width: 10%;
+    }
+
+    .icon img{
+        width: 100%;
     }
 
     /* Main */
@@ -700,5 +800,23 @@ input:focus, textarea:focus{
 
     input,textarea{
         margin: 1rem 0;
+    }
+}
+
+@keyframes height-grow{
+    from{
+        transform: scaleY(0);
+    }
+    to{
+        transform: scaleY(1);
+    }
+}
+
+@keyframes height-decrease{
+    from{
+        transform: scaleY(1);
+    }
+    to{
+        transform: scaleY(0);
     }
 }

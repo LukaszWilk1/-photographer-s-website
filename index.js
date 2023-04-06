@@ -16,3 +16,13 @@ function reveal(){
 window.addEventListener("scroll", reveal);
 
 reveal();
+
+function navbar(){
+    var navbarElement=document.getElementById("navbar");
+    if(navbarElement.classList.contains("responsive")){
+        navbarElement.classList.remove("responsive");
+    }
+    else{
+        navbarElement.classList.add("responsive");
+    }
+}

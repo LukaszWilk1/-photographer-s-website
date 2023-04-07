@@ -19,10 +19,12 @@ reveal();
 
 function navbar(){
     var navbarElement=document.getElementById("navbar");
-    if(navbarElement.classList.contains("responsive")){
-        navbarElement.classList.remove("responsive");
+    if(navbarElement.classList.contains("animation")){
+        navbarElement.classList.remove("animation");
+        navbarElement.classList.add("anim-back");
     }
     else{
-        navbarElement.classList.add("responsive");
+        navbarElement.classList.remove("anim-back");
+        navbarElement.classList.add("animation");
     }
 }

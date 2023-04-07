@@ -56,6 +56,18 @@ nav a img{
   display: none;
 }
 
+/* NAVBAR ANIMATIONS */
+
+.animation{
+    transform: scaleY(0);
+    transition-duration: 250ms;
+}
+
+.anim-back{
+    transform: scaleY(1);
+    transition-duration: 250ms;
+}
+
 /* Header */
 
 header{
@@ -440,23 +452,12 @@ input:focus, textarea:focus{
         position: absolute;
         top: 100%;
         left: 0%;
-    }
-
-    nav p a{
-        display: none;
-        font-size: 0.75rem;
-        margin: 1em;
-    }
-
-    nav.responsive p{
-        display: block;
-        animation-name: height-grow;
-        animation-duration: 250ms;
         background-color: gainsboro;
     }
 
-    nav.responsive p a{
-        display: block;
+    nav p a{
+        font-size: 0.75em;
+        margin: 1rem 0;
     }
 
     nav .icon{
@@ -490,8 +491,8 @@ input:focus, textarea:focus{
 
     /* Footer */
 
-    footer img{
-        width: 7%;
+    footer a{
+        width: 5%;
     }
 
     /* ABOUT ME */
@@ -797,32 +798,5 @@ input:focus, textarea:focus{
 
     input,textarea{
         margin: 1rem 0;
-    }
-}
-
-@keyframes height-grow{
-    from{
-        transform: scaleY(0);
-    }
-    to{
-        transform: scaleY(1);
-    }
-}
-
-@keyframes height-decrease{
-    from{
-        transform: scaleY(1);
-    }
-    to{
-        transform: scaleY(0);
-    }
-}
-
-@keyframes hiding-as {
-    from{
-        display: none;
-    }
-    to{
-        display: block;
     }
 }

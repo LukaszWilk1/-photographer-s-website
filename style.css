@@ -56,18 +56,6 @@ nav a img{
   display: none;
 }
 
-/* NAVBAR ANIMATIONS */
-
-.animation{
-    transform: scaleY(0);
-    transition-duration: 250ms;
-}
-
-.anim-back{
-    transform: scaleY(1);
-    transition-duration: 250ms;
-}
-
 /* Header */
 
 header{
@@ -439,6 +427,18 @@ input:focus, textarea:focus{
 
     /* NAV */
 
+    .animation{
+        transform: scaleY(0);
+        transition-duration: 250ms;
+        visibility: hidden;
+    }
+    
+    .anim-back{
+        transform: scaleY(1);
+        transition-duration: 250ms;
+        visibility: visible;
+    }
+
     nav p{
         padding: 0;
         text-align: center;
@@ -453,6 +453,7 @@ input:focus, textarea:focus{
         top: 100%;
         left: 0%;
         background-color: gainsboro;
+        visibility: hidden;
     }
 
     nav p a{
@@ -545,6 +546,10 @@ input:focus, textarea:focus{
 
     /*PRESETS*/
 
+    h3{
+        font-size: 1.5em;
+    }
+
     #presets-container{
         justify-content: center;
         align-items: space-between;
@@ -563,21 +568,38 @@ input:focus, textarea:focus{
 
     /* NAV */
 
+    .animation{
+        transform: scaleY(0);
+        transition-duration: 250ms;
+        visibility: hidden;
+    }
+    
+    .anim-back{
+        transform: scaleY(1);
+        transition-duration: 250ms;
+        visibility: visible;
+    }
+
     nav p{
         padding: 0;
-        text-align: right;
+        text-align: center;
         flex-direction: column;
         width: auto;
         align-items: center;
         justify-content: center;
-    }
-
-    nav.responsive{
-        position: relative;
+        width: 100%;
+        min-width: 100px;
+        z-index: 1;
+        position: absolute;
+        top: 100%;
+        left: 0%;
+        background-color: gainsboro;
+        visibility: hidden;
     }
 
     nav p a{
-        display: none;
+        font-size: 0.75em;
+        margin: 1rem 0;
     }
 
     nav .icon{
@@ -592,7 +614,7 @@ input:focus, textarea:focus{
     /* Header */
 
     header{
-        padding: 1.5rem 0 14rem;
+        padding: 5.5rem 0 14rem;
     }
 
     header img{
@@ -664,21 +686,38 @@ input:focus, textarea:focus{
 
     /* NAV */
 
+    .animation{
+        transform: scaleY(0);
+        transition-duration: 250ms;
+        visibility: hidden;
+    }
+    
+    .anim-back{
+        transform: scaleY(1);
+        transition-duration: 250ms;
+        visibility: visible;
+    }
+
     nav p{
         padding: 0;
-        text-align: right;
+        text-align: center;
         flex-direction: column;
         width: auto;
         align-items: center;
         justify-content: center;
-    }
-
-    nav.responsive{
-        position: relative;
+        width: 100%;
+        min-width: 100px;
+        z-index: 1;
+        position: absolute;
+        top: 100%;
+        left: 0%;
+        background-color: gainsboro;
+        visibility: hidden;
     }
 
     nav p a{
-        display: none;
+        font-size: 1.25em;
+        margin: 1rem 0;
     }
 
     nav .icon{
@@ -745,6 +784,21 @@ input:focus, textarea:focus{
 }
 @media only screen and (min-width: 1024px) and (max-width: 1599px){
 
+    /* NAV */
+
+    nav{
+        flex-wrap: nowrap;
+    }
+
+    h1{
+        width: 30%;
+    }
+
+    nav p{
+        width: 20%;
+        min-width: 300px;
+    }
+
     /* Header */
 
     header{
@@ -800,3 +854,5 @@ input:focus, textarea:focus{
         margin: 1rem 0;
     }
 }
+
+/* GRID W ZAKLADCE NATURAL SIE ROZJEZDZA W SURFACE DUO, DELIKATNIE W IPAD MINI I IPAD AIR (TO JUZ JEST PROBLEM)  */

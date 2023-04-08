@@ -137,7 +137,7 @@ footer a img{
 
 #about-me-h1{
     font-size: 3.75em;
-    font-weight:normal;
+    font-weight: normal;
 }
 
 #about-me-p{
@@ -546,6 +546,10 @@ input:focus, textarea:focus{
 
     /*PRESETS*/
 
+    #presets-main{
+        padding: 3rem 1rem 2rem;
+    }
+
     h3{
         font-size: 1.5em;
     }
@@ -604,7 +608,7 @@ input:focus, textarea:focus{
 
     nav .icon{
         display: block;
-        width: 10%;
+        width: 7%;
     }
 
     .icon img{
@@ -640,6 +644,10 @@ input:focus, textarea:focus{
         width: 3%;
     }
 
+    footer a{
+        width: 5%;
+    }
+
     /* ABOUT ME */
 
     #about-me-main{
@@ -667,6 +675,10 @@ input:focus, textarea:focus{
 
     /*PRESETS*/
 
+    #presets-main{
+        padding: 4rem 1rem 6rem;
+    }
+
     #presets-container{
         justify-content: center;
         align-items: space-between;
@@ -676,12 +688,38 @@ input:focus, textarea:focus{
         width: 50%;
     }
 
+    /* NATURE */
+
+    #main-grid-container{
+        display: inline;
+    }
+
+    #first-nat-grid{
+        display: block;
+        width: 100%;
+    }
+
+    #second-nat-grid{
+        display: block;
+        width: 100%;
+    }
+
+    #third-nat-grid{
+        display: block;
+        width: 100%;
+    }
+
+    .small-grid{
+        float:none;
+    }
+
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px){
     /* Header */
     header img{
         width: 55%;
+        margin-top: 1rem;
     }
 
     /* NAV */
@@ -722,7 +760,7 @@ input:focus, textarea:focus{
 
     nav .icon{
         display: block;
-        width: 10%;
+        width: 8%;
     }
 
     .icon img{
@@ -744,11 +782,14 @@ input:focus, textarea:focus{
     footer img{
         width: 5%;
     }
+    footer a{
+        width: 5%;
+    }
 
     /* ABOUT ME */
     
     #about-me-h1{
-        font-size: 7em;
+        font-size: 6em;
     }
     
     #about-me-img{
@@ -779,6 +820,32 @@ input:focus, textarea:focus{
 
     .cell{
         width: 50%;
+        font-size: 1.5em;
+    }
+
+    /* NATURE */
+
+    #main-grid-container{
+        display: inline;
+    }
+
+    #first-nat-grid{
+        display: block;
+        width: 100%;
+    }
+
+    #second-nat-grid{
+        display: block;
+        width: 100%;
+    }
+
+    #third-nat-grid{
+        display: block;
+        width: 100%;
+    }
+
+    .small-grid{
+        float:none;
     }
 
 }
@@ -852,6 +919,13 @@ input:focus, textarea:focus{
 
     input,textarea{
         margin: 1rem 0;
+    }
+
+    /* ABOUT ME */
+    
+    #about-me-h1{
+        font-size: 3em;
+        text-align: center;
     }
 }
 
